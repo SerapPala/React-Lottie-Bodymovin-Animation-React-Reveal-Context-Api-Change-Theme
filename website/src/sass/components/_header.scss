@@ -1,0 +1,36 @@
+.header{
+    width:100%;
+    height:75vh;
+    @include bgImage('./images/1.png');
+    background-color:rgba($color: gray, $alpha: 9.0);
+    @include flexCenter;
+    color:$white;
+
+    &__content{
+        text-align:center;
+
+         &-links a{
+         text-decoration: none;
+         color:$white;
+         margin-left:14px;
+         font-size:16px;
+        }
+
+        &-span{
+            display:inline-block;
+            height:15px;
+            width:1.5px;
+            background:$white;
+            margin-left:20px;
+            transform:rotate(10deg);
+        }
+        
+    }
+
+    &__content-h1{
+        font-size:75px;
+        margin-bottom:200px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+}

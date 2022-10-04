@@ -1,0 +1,109 @@
+.works {
+    @include bgImage("");
+    width:100%;
+    height:500px;
+    background-color:rgba(0,0,0,0.7);
+    @include flexVertical();
+    color:$white;
+
+    &__content h1 {
+        font-size:48px;
+        font-weight: 600;
+    }
+
+    &__card {
+        position:absolute;
+        bottom: -230px;
+        width:470px;
+        padding:80px 40px;
+        background-color:$orange;
+        right:0;
+        color:$black;
+        @include responsive(765px){
+            width:300px;
+            bottom:-500px;
+
+        }
+
+        &-h6{
+            font-size:15px;
+            font-weight:300;
+            letter-spacing: 4px;
+            margin-bottom:10px;
+        }
+
+
+        &-h4{
+            font-size:25px;
+            font-weight:600;
+            color:$white;
+            margin-bottom:10px;
+        }
+
+        &-text{
+            font-size:14px;
+            letter-spacing:1px;
+        }
+    }
+    &__card2 {
+        position:absolute;
+        bottom: -230px;
+        width:470px;
+        padding:80px 40px;
+        background-color:$green;
+        right:0;
+        color:$black;
+        @include responsive(765px){
+            width:300px;
+            bottom:-500px;
+
+        }
+
+        &-h6{
+            font-size:15px;
+            font-weight:300;
+            letter-spacing: 4px;
+            margin-bottom:10px;
+        }
+
+
+        &-h4{
+            font-size:25px;
+            font-weight:600;
+            color:$white;
+            margin-bottom:10px;
+        }
+
+        &-text{
+            font-size:14px;
+            letter-spacing:1px;
+        }
+    }
+}
+
+#gonderGelsin {
+    animation-name: gonder;
+    animation-duration: 3s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction:reverse;
+    animation-delay: 1s;
+  }
+@keyframes gonder { 
+    from {
+      margin-left:100%;
+      width:110%
+    }
+    
+    to {
+      margin-left:0%;
+      width:100%;
+    }
+    }
+    
+    
+    #gonderGelsin {
+      
+      animation-name: gonder; 
+      animation-duration: 3s; 
+    }
